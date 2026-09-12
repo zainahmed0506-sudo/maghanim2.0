@@ -4,6 +4,8 @@ import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import type {ReactNode} from 'react';
 import {fontVariables} from '@/app/fonts';
+import {Header} from '@/components/Header';
+import {Footer} from '@/components/Footer';
 import {localeDirection, localeHtmlLang, routing} from '@/i18n/routing';
 import {buildAlternates, siteUrl} from '@/lib/metadata';
 import '@/app/globals.css';
@@ -55,7 +57,11 @@ export default async function LocaleLayout({children, params}: Props) {
       className={fontVariables}
     >
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
