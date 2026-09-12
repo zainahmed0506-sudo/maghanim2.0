@@ -1,0 +1,250 @@
+{
+  "brand": {
+    "name": "Maghanim",
+    "nameArabic": "مغانم",
+    "legalName": "[PLACEHOLDER: official legal name]",
+    "markAlt": "Maghanim calligraphy mark",
+    "wordmarkAlt": "Maghanim"
+  },
+  "common": {
+    "comingSoon": "Coming soon",
+    "skipToContent": "Skip to content",
+    "languageToggle": "العربية",
+    "languageToggleLabel": "Switch to Arabic",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "learnMore": "[PLACEHOLDER: secondary link label]"
+  },
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "governance": "Governance",
+    "contact": "Contact"
+  },
+  "metadata": {
+    "siteName": "Maghanim",
+    "home": {
+      "title": "[PLACEHOLDER: home page title]",
+      "description": "[PLACEHOLDER: home page meta description, max 160 characters]"
+    },
+    "solutions": {
+      "title": "[PLACEHOLDER: solutions page title]",
+      "description": "[PLACEHOLDER: solutions page meta description]"
+    },
+    "governance": {
+      "title": "[PLACEHOLDER: governance page title]",
+      "description": "[PLACEHOLDER: governance page meta description]"
+    },
+    "contact": {
+      "title": "[PLACEHOLDER: contact page title]",
+      "description": "[PLACEHOLDER: contact page meta description]"
+    },
+    "privacy": {
+      "title": "[PLACEHOLDER: privacy policy page title]",
+      "description": "[PLACEHOLDER: privacy policy meta description]"
+    },
+    "terms": {
+      "title": "[PLACEHOLDER: terms of use page title]",
+      "description": "[PLACEHOLDER: terms of use meta description]"
+    },
+    "notFound": {
+      "title": "[PLACEHOLDER: 404 page title]",
+      "description": "[PLACEHOLDER: 404 page meta description]"
+    }
+  },
+  "hero": {
+    "headline": "[PLACEHOLDER: hero headline]",
+    "subheadline": "[PLACEHOLDER: hero subheading, one line]",
+    "cta": "[PLACEHOLDER: hero button label]",
+    "coinAlt": "[PLACEHOLDER: alt text for the Maghanim gold coin]"
+  },
+  "platform": {
+    "title": "[PLACEHOLDER: one-platform section heading]",
+    "body": "[PLACEHOLDER: short statement explaining the single-platform concept]",
+    "pillars": {
+      "payments": {
+        "title": "Payments & acceptance",
+        "description": "[PLACEHOLDER: one-line description of payments and acceptance]"
+      },
+      "cards": {
+        "title": "Cards & spend",
+        "description": "[PLACEHOLDER: one-line description of cards and spend]"
+      },
+      "business": {
+        "title": "Business management",
+        "description": "[PLACEHOLDER: one-line description of business management]"
+      },
+      "financing": {
+        "title": "Financing",
+        "description": "[PLACEHOLDER: one-line description of financing]"
+      }
+    }
+  },
+  "explorer": {
+    "title": "[PLACEHOLDER: solution explorer section heading]",
+    "body": "[PLACEHOLDER: solution explorer introduction]",
+    "tabListLabel": "Solution areas",
+    "pillars": {
+      "payments": {
+        "title": "Payments & acceptance",
+        "summary": "[PLACEHOLDER: payments panel summary]",
+        "features": [
+          "POS terminals",
+          "Tap-to-phone acceptance",
+          "Online payment gateway",
+          "Payment links",
+          "Wallet acceptance"
+        ]
+      },
+      "cards": {
+        "title": "Cards & spend",
+        "summary": "[PLACEHOLDER: cards and spend panel summary]",
+        "features": [
+          "Islamic cards",
+          "Virtual cards",
+          "Corporate expense management",
+          "B2B corporate travel payments",
+          "Supplier payments"
+        ]
+      },
+      "business": {
+        "title": "Business management",
+        "summary": "[PLACEHOLDER: business management panel summary]",
+        "features": [
+          "Odoo ERP",
+          "Accounting",
+          "Payroll",
+          "CRM",
+          "Inventory",
+          "HR"
+        ]
+      },
+      "financing": {
+        "title": "Financing",
+        "summary": "[PLACEHOLDER: financing panel summary]",
+        "features": ["Shariah-compliant working capital"]
+      }
+    },
+    "partnerAttribution": "[PLACEHOLDER: line attributing regulated services to licensed partners]"
+  },
+  "howItWorks": {
+    "title": "[PLACEHOLDER: how it works section heading]",
+    "body": "[PLACEHOLDER: how it works introduction]",
+    "stepLabel": "Step {number}",
+    "steps": {
+      "onboard": {
+        "title": "Onboard",
+        "description": "[PLACEHOLDER: description of the onboard step]"
+      },
+      "fund": {
+        "title": "Fund",
+        "description": "[PLACEHOLDER: description of the fund step]"
+      },
+      "issue": {
+        "title": "Issue",
+        "description": "[PLACEHOLDER: description of the issue step — must attribute issuance to the licensed partner]"
+      },
+      "book": {
+        "title": "Book",
+        "description": "[PLACEHOLDER: description of the book step]"
+      },
+      "settle": {
+        "title": "Settle",
+        "description": "[PLACEHOLDER: description of the settle step]"
+      }
+    }
+  },
+  "partners": {
+    "title": "[PLACEHOLDER: partners section heading]",
+    "body": "[PLACEHOLDER: partners section introduction]",
+    "logoPlaceholderAlt": "Logo to be supplied",
+    "items": {
+      "flocash": {"name": "Flocash", "role": "Technology partner"},
+      "mawarid": {"name": "Mawarid Finance", "role": "Banking-as-a-service partner"},
+      "afs": {"name": "Arab Financial Services", "role": "Payment solutions provider"},
+      "odoo": {"name": "Odoo", "role": "Certified ERP partner"}
+    }
+  },
+  "governance": {
+    "title": "[PLACEHOLDER: Shariah governance section heading]",
+    "body": "[PLACEHOLDER: short statement about independent Shariah oversight]",
+    "cta": "[PLACEHOLDER: governance link label]"
+  },
+  "contact": {
+    "title": "[PLACEHOLDER: contact section heading]",
+    "body": "[PLACEHOLDER: contact section introduction]",
+    "form": {
+      "name": {
+        "label": "[PLACEHOLDER: name field label]",
+        "placeholder": "[PLACEHOLDER: name field placeholder]",
+        "error": "[PLACEHOLDER: name validation message]"
+      },
+      "company": {
+        "label": "[PLACEHOLDER: company field label]",
+        "placeholder": "[PLACEHOLDER: company field placeholder]",
+        "error": "[PLACEHOLDER: company validation message]"
+      },
+      "email": {
+        "label": "[PLACEHOLDER: email field label]",
+        "placeholder": "[PLACEHOLDER: email field placeholder]",
+        "error": "[PLACEHOLDER: email validation message]"
+      },
+      "phone": {
+        "label": "[PLACEHOLDER: phone field label]",
+        "placeholder": "[PLACEHOLDER: phone field placeholder]",
+        "error": "[PLACEHOLDER: phone validation message]"
+      },
+      "message": {
+        "label": "[PLACEHOLDER: message field label]",
+        "placeholder": "[PLACEHOLDER: message field placeholder]",
+        "error": "[PLACEHOLDER: message validation message]"
+      },
+      "submit": "[PLACEHOLDER: submit button label]",
+      "submitting": "[PLACEHOLDER: submitting state label]",
+      "success": "[PLACEHOLDER: success message]",
+      "error": "[PLACEHOLDER: error message]",
+      "required": "[PLACEHOLDER: required field indicator text]"
+    }
+  },
+  "footer": {
+    "linksTitle": "[PLACEHOLDER: footer links column heading]",
+    "socialTitle": "[PLACEHOLDER: footer social column heading]",
+    "links": {
+      "solutions": "Solutions",
+      "governance": "Governance",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    },
+    "copyright": "© {year} [PLACEHOLDER: official legal name]. [PLACEHOLDER: rights statement]",
+    "disclaimer": "[PLACEHOLDER: regulatory disclaimer — regulated services are provided by licensed partners]"
+  },
+  "pages": {
+    "solutions": {
+      "title": "[PLACEHOLDER: solutions hub heading]",
+      "body": "[PLACEHOLDER: solutions hub introduction]",
+      "pillarLinkLabel": "[PLACEHOLDER: 'view pillar' link label]"
+    },
+    "governance": {
+      "title": "[PLACEHOLDER: governance page heading]",
+      "body": "[PLACEHOLDER: governance page content — client to confirm what goes here]"
+    },
+    "contact": {
+      "title": "[PLACEHOLDER: contact page heading]",
+      "body": "[PLACEHOLDER: contact page introduction]"
+    },
+    "privacy": {
+      "title": "[PLACEHOLDER: privacy policy heading]",
+      "body": "[PLACEHOLDER: privacy policy content]"
+    },
+    "terms": {
+      "title": "[PLACEHOLDER: terms of use heading]",
+      "body": "[PLACEHOLDER: terms of use content]"
+    },
+    "notFound": {
+      "title": "[PLACEHOLDER: 404 heading]",
+      "body": "[PLACEHOLDER: 404 body copy]",
+      "cta": "[PLACEHOLDER: 404 back-home link label]"
+    }
+  }
+}

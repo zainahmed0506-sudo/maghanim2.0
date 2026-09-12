@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   Design tokens — CLAUDE.md §6. These are the ONLY colours permitted.
+   Contrast is measured and recorded there; gold must never be used for text
+   on light backgrounds (2.4:1, fails AA).
+--------------------------------------------------------------------------- */
+@theme {
+  --color-emerald: #0b3227;
+  --color-emerald-mid: #145c48;
+  --color-cream: #f5f0e8;
+  --color-gold: #be973a;
+  --color-gold-light: #d4af5a;
+  --color-ink: #0b3227;
+  --color-body: #3a3a3a;
+}
+
+/* Font families resolve per text direction, so Arabic pages automatically use
+   the Arabic faces without any per-component branching. */
+@theme inline {
+  --font-display: var(--font-display-active);
+  --font-sans: var(--font-body-active);
+}
+
+:root {
+  --font-display-active: var(--font-heading), Georgia, 'Times New Roman', serif;
+  --font-body-active: var(--font-geist-sans), system-ui, sans-serif;
+
+  /* Arabic gets a more generous line-height than English — CLAUDE.md §5. */
+  --leading-body: 1.6;
+}
+
+[dir='rtl'] {
+  --font-display-active: var(--font-heading-ar), system-ui, sans-serif;
+  --font-body-active: var(--font-body-ar), system-ui, sans-serif;
+  --leading-body: 1.9;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Letter-spacing breaks Arabic letter joining — CLAUDE.md §5. This is a
+   safety net: it neutralises any tracking utility that reaches Arabic text. */
+[dir='rtl'],
+[dir='rtl'] * {
+  letter-spacing: normal !important;
+}
+
+/* Visible focus for keyboard users — CLAUDE.md §10. */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
