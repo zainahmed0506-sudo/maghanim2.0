@@ -203,7 +203,156 @@ footer p {
 
 /* Main content padding */
 main {
+  padding: 0;
+}
+
+/* ============================================================================
+   HERO SECTION — Phase 3
+   ============================================================================ */
+.hero {
+  background: var(--color-emerald);
+  color: var(--color-cream);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Geometric pattern at 8% opacity on emerald — CLAUDE.md §6 */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="%23BE973A" stroke-width="1"/><path d="M20,100 Q100,20 180,100 Q100,180 20,100" fill="none" stroke="%23BE973A" stroke-width="0.5" opacity="0.5"/></svg>');
+  background-size: 200px 200px;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-mark {
+  margin-bottom: 2rem;
+  width: 80px;
+  height: 80px;
+}
+
+.hero-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(1);
+  opacity: 0.9;
+}
+
+.hero-headline {
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+[dir='rtl'] .hero-headline {
+  letter-spacing: normal;
+}
+
+.hero-subheading {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 700px;
+}
+
+.hero-cta {
+  background: var(--color-gold);
+  color: var(--color-emerald);
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 4rem;
+  transition: all 0.2s ease-out;
+}
+
+.hero-cta:hover {
+  background: var(--color-gold-light);
+  transform: scale(1.02);
+}
+
+.hero-cta:active {
+  transform: scale(0.98);
+}
+
+.hero-cta:focus-visible {
+  outline: 2px solid var(--color-cream);
+  outline-offset: 4px;
+}
+
+.hero-coin-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
+.hero-coin-container {
+  position: relative;
+  width: min(550px, 80vw);
+  height: auto;
+}
+
+.hero-coin-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coin-shadow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 30px;
+  border-radius: 50%;
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+/* Placeholder sections — Phase 4–6 */
+.section-placeholder {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--color-cream);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section-placeholder:nth-child(odd) {
+  background: var(--color-white);
+}
+
+.section-placeholder h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-ink);
 }
 
 @media (max-width: 768px) {

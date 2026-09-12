@@ -2,40 +2,50 @@ import {hasLocale, useTranslations} from 'next-intl';
 import {setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {use} from 'react';
+import {Hero} from '@/components/Hero';
 import {routing} from '@/i18n/routing';
 
 type Props = {params: Promise<{locale: string}>};
 
 /**
- * Phase 1 placeholder. Renders the heading of every section the home page will
- * carry (CLAUDE.md §7 / brief §8) so the message wiring and locale direction
- * can be reviewed before any design work begins.
+ * Home page. Phase 3: Hero section added.
+ * Placeholder content sections below hero pending Phase 4–6.
  */
 export default function HomePage({params}: Props) {
   const {locale} = use(params);
   if (!hasLocale(routing.locales, locale)) notFound();
-  setRequestLocale(locale);
 
+  setRequestLocale(locale);
   const t = useTranslations();
-  const sections = [
-    'hero.headline',
-    'platform.title',
-    'explorer.title',
-    'howItWorks.title',
-    'partners.title',
-    'governance.title',
-    'contact.title'
-  ] as const;
 
   return (
     <main>
-      <h1>{t('hero.headline')}</h1>
-      <p>{t('hero.subheadline')}</p>
-      <ol>
-        {sections.map((key) => (
-          <li key={key}>{t(key)}</li>
-        ))}
-      </ol>
+      <Hero />
+
+      {/* Placeholder sections — Phase 4–6 */}
+      <section className="section-placeholder">
+        <h2>{t('platform.title')}</h2>
+      </section>
+
+      <section className="section-placeholder">
+        <h2>{t('explorer.title')}</h2>
+      </section>
+
+      <section className="section-placeholder">
+        <h2>{t('howItWorks.title')}</h2>
+      </section>
+
+      <section className="section-placeholder">
+        <h2>{t('partners.title')}</h2>
+      </section>
+
+      <section className="section-placeholder">
+        <h2>{t('governance.title')}</h2>
+      </section>
+
+      <section className="section-placeholder">
+        <h2>{t('contact.title')}</h2>
+      </section>
     </main>
   );
 }
